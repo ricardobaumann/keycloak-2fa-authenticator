@@ -1,1 +1,1 @@
-dasniko.keycloak.authenticator.SmsAuthenticatorFactory
+com.agosh.keycloak2fa.SmsAuthenticatorFactory

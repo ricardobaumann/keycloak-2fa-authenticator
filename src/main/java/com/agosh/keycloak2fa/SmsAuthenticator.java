@@ -1,9 +1,10 @@
 package com.agosh.keycloak2fa;
 
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.keycloak.authentication.AuthenticationFlowContext;
 import org.keycloak.authentication.AuthenticationFlowError;
 import org.keycloak.authentication.Authenticator;
-import org.keycloak.common.util.SecretGenerator;
 import org.keycloak.models.AuthenticationExecutionModel;
 import org.keycloak.models.AuthenticatorConfigModel;
 import org.keycloak.models.KeycloakSession;
@@ -16,8 +17,12 @@ import javax.ws.rs.core.Response;
 import java.util.Locale;
 import java.util.Optional;
 
+@Slf4j
+@RequiredArgsConstructor
 public class SmsAuthenticator implements Authenticator {
     private static final String TPL_CODE = "login-sms.ftl";
+
+    private final OtpGenerationService otpGenerationService;
 
     @Override
     public void authenticate(AuthenticationFlowContext context) {
@@ -31,7 +36,7 @@ public class SmsAuthenticator implements Authenticator {
         int length = Integer.parseInt(config.getConfig().get("length"));
         int ttl = Integer.parseInt(config.getConfig().get("ttl"));
 
-        String code = "123";
+        String code = otpGenerationService.generateCode(length);
         AuthenticationSessionModel authSession = context.getAuthenticationSession();
         authSession.setAuthNote("code", code);
         authSession.setAuthNote("ttl", Long.toString(System.currentTimeMillis() + (ttl * 1000L)));
@@ -46,6 +51,7 @@ public class SmsAuthenticator implements Authenticator {
 
             context.challenge(context.form().setAttribute("realm", context.getRealm()).createForm(TPL_CODE));
         } catch (Exception e) {
+            log.error("Failed to send SMS", e);
             //test theme file rendering
             context.failureChallenge(AuthenticationFlowError.INTERNAL_ERROR,
                     context.form().setError("smsAuthSmsNotSent", e.getMessage())

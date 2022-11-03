@@ -15,9 +15,10 @@ repositories {
     mavenCentral()
 }
 
-dependencies{
+dependencies {
     implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
     implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+    implementation 'org.springframework:spring-web:5.3.23'
     compileOnly 'org.keycloak.bom:keycloak-spi-bom:20.0.0'
     compileOnly 'org.keycloak:keycloak-server-spi:20.0.0'
     compileOnly 'org.keycloak:keycloak-server-spi-private:20.0.0'

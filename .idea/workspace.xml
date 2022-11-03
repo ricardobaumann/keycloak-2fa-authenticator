@@ -4,32 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd407b32-67b9-4647-89f3-6127130db230" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/NotificationSmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticatorFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsServiceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/services/org.keycloak.authentication.AuthenticatorFactory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/theme-resources/messages/messages_de.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/theme-resources/messages/messages_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/theme-resources/templates/login-sms.ftl" afterDir="false" />
+    <list default="true" id="dd407b32-67b9-4647-89f3-6127130db230" name="Changes" comment="scaffold">
+      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/NotificationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/OtpGenerationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/RestTemplateFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SendSmsPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/NotificationSmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/NotificationSmsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticatorFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsServiceFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +59,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "settings.saveactions"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -80,6 +68,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.agosh.keycloak2fa" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,8 +81,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667393599191</updated>
-      <workItem from="1667393601229" duration="7200000" />
+      <workItem from="1667393601229" duration="7297000" />
+      <workItem from="1667467657586" duration="2546000" />
     </task>
+    <task id="LOCAL-00001" summary="scaffold">
+      <created>1667400880650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667400880650</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,5 +107,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="scaffold" />
+    <option name="LAST_COMMIT_MESSAGE" value="scaffold" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

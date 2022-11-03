@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd407b32-67b9-4647-89f3-6127130db230" name="Changes" comment="scaffold">
-      <change afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/NotificationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/OtpGenerationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/RestTemplateFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SendSmsPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="dd407b32-67b9-4647-89f3-6127130db230" name="Changes" comment="integration with notification service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/NotificationSmsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/NotificationSmsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticatorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsAuthenticatorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/SmsServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/RestTemplateFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/agosh/keycloak2fa/RestTemplateFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667393599191</updated>
       <workItem from="1667393601229" duration="7297000" />
-      <workItem from="1667467657586" duration="2546000" />
+      <workItem from="1667467657586" duration="2974000" />
     </task>
     <task id="LOCAL-00001" summary="scaffold">
       <created>1667400880650</created>
@@ -91,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667400880650</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="integration with notification service">
+      <created>1667470292563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667470292563</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +107,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="scaffold" />
-    <option name="LAST_COMMIT_MESSAGE" value="scaffold" />
+    <MESSAGE value="integration with notification service" />
+    <option name="LAST_COMMIT_MESSAGE" value="integration with notification service" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
